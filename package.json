@@ -1,8 +1,8 @@
 {
   "name": "hairsaronApp",
-  "displayName": "ヘアスタイル提案",
-  "displayShortName": "ヘアスタイル提案",
-  "description": "スタイリストによる提案型ヘアスタイルサロン",
+  "displayName": "ミツカルヘアサロン",
+  "displayShortName": "ミツカルヘアサロン",
+  "description": "スタイリストによる提案型のヘアスタイルサロン",
   "applicationHost": "https://kenimo49.github.io",
   "version": "0.0.1",
   "private": true,

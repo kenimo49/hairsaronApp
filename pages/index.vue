@@ -5,7 +5,7 @@
           <v-form>
             <v-text-field label="ユーザー名" v-model="username" required />
             <v-text-field label="パスワード" v-model="password" :type="show ? 'text' : 'password'" :append-icon="show ? 'visibility' : 'visibility_off'" @click:append="show = !show" />
-            <v-btn flat @click="signin">ログイン</v-btn>
+            <v-btn @click="signin" color="red lighten-2" dark depressed>ログイン</v-btn>
           </v-form>
         </v-flex>
       </v-layout>
@@ -18,7 +18,9 @@ import Vue from 'vue';
 
 export default Vue.extend({
   data: (): object => ({
-    show: false
+    show: false,
+    username: 'ヘアースタイリスト太郎',
+    password: 'HQ7xKzYffXG5sKZX'
   }),
   methods: {
     signin(): void {
@@ -31,7 +33,7 @@ export default Vue.extend({
 
 <style scoped>
 .bottom {
-  background-color: rgba(248, 242, 242, .4);
+  background-color: rgba(248, 242, 242, .75);
   padding: 0 20px;
   color: black;
 }

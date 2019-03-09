@@ -10,10 +10,10 @@
           <v-card-title primary-title>
             <div>
               <div class="headline">{{ order.userName }}</div>
-              <div>エリア: {{ order.area }}</div>
-              <div>日時: {{ order.proporsalDate.estimateStart }} ～ {{ order.proporsalDate.proporsalDateEnd }}</div>
-              <div>予算: {{ order.estimate.estimateStart }} ～ {{ order.estimate.estimateEnd }}</div>
-              <div>希望: {{ order.hope }}</div>
+              <div>エリア: {{ order.area[0] }}</div>
+              <div>日時: {{ order.proporsalDate.proporsalDateStart }} ～ {{ order.proporsalDate.proporsalDateEnd }}</div>
+              <div>予算: {{ String(order.estimate.estimateStart).replace( /(\d)(?=(\d\d\d)+(?!\d))/g, '$1,') }} ～ {{ String(order.estimate.estimateEnd).replace( /(\d)(?=(\d\d\d)+(?!\d))/g, '$1,') }}</div>
+              <div>希望: {{ order.hope[0] }}</div>
             </div>
           </v-card-title>
         </v-flex>
@@ -51,40 +51,54 @@ import Vue from 'vue';
 
 export default Vue.extend({
   data: (): object => ({
-    message: '',
+    message: 'モヒカンには熱い思いがあるんだ～～～\nお任せください！！',
     dialog: false
   }),
   async asyncData({ query }: NuxtContext): Promise<object> {
     const orders = [
-      {
-        userName: "スタイリスト太郎",
-        userPhotoPath: "http://image.news.livedoor.com/newsimage/9/5/954a07e8244511d6e87c4d3233413596-cm.jpg?v=20180718161102",
-        hope: ["キレイ目"],
-        area: ["東京"],
-        estimate: {
-          estimateStart : 2000,
-          estimateEnd : 5000
+        {
+          userName: "マツコ",
+          userPhotoPath: "https://camo.qiitausercontent.com/7081d402d9361d63ba0c157726c1bd15b6920603/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f3235363532302f34303465323836662d623238662d393837382d396235662d3661653833633437613435642e6a706567",
+          hope: [ "インパクトのある" ],
+          area: [ "シブヤ" ],
+          estimate: {
+            estimateStart : 2000,
+            estimateEnd : 4000
+          },
+          proporsalDate: {
+            proporsalDateStart: "2019/2/9",
+            proporsalDateEnd: "2019/2/10"
+            }
         },
-        proporsalDate: {
-          proporsalDateStart: "2019/01/05",
-          proporsalDateEnd: "2019/01/10"
-          }
-      },
-      {
-        userName: "スタイリスト次郎",
-        userPhotoPath: "http://image.news.livedoor.com/newsimage/9/5/954a07e8244511d6e87c4d3233413596-cm.jpg?v=20180718161102",
-        hope: ["キレイ目"],
-        area: ["東京"],
-        estimate: {
-          estimateStart : 2000,
-          estimateEnd : 5000
+        {
+          userName: "マツコ次郎",
+          userPhotoPath: "http://image.news.livedoor.com/newsimage/stf/e/0/e030e3c6c0ef1e8bf7461029c64bf14d-cm.jpg?v=20190222071729",
+          hope: ["キレイ目"],
+          area: ["シブヤ"],
+          estimate: {
+            estimateStart : 2000,
+            estimateEnd : 5000
+          },
+          proporsalDate: {
+            proporsalDateStart: "2019/2/10",
+            proporsalDateEnd: "2019/2/10"
+            }
         },
-        proporsalDate: {
-          proporsalDateStart: "2019/01/05",
-          proporsalDateEnd: "2019/01/10"
-          }
-      }
-    ];
+        {
+          userName: "マツコ三郎",
+          userPhotoPath: "https://pbs.twimg.com/profile_images/670404289060171776/1GAWu4JF_400x400.jpg",
+          hope: ["女優"],
+          area: ["１０９"],
+          estimate: {
+            estimateStart : 5000,
+            estimateEnd : 8000
+          },
+          proporsalDate: {
+            proporsalDateStart: "2019/2/10",
+            proporsalDateEnd: "2019/2/28"
+            }
+        }
+      ];
 
     return {
       order: orders.filter(o => o.userName === query.target)[0]
@@ -113,7 +127,7 @@ export default Vue.extend({
 .v-form {
   width: 70%;
   margin: 0 auto;
-  background-color: rgba(248, 242, 242, .4);
+  background-color: rgba(248, 242, 242, .75);
   padding: 0 20px;
   color: black;
 }

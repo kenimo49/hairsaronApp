@@ -1,5 +1,5 @@
 <template>
-  <v-app dark :style="wallpaper()">
+  <v-app :style="wallpaper()">
     <v-toolbar app flat height="36px">
       <v-toolbar-title class="title">
         <router-link to="/">
