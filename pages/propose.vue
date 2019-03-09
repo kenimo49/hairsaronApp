@@ -92,8 +92,12 @@ export default Vue.extend({
   },
   methods: {
     propose() {
+      const data = {
+        stylistId: 10,
+        message: this.message
+      };
+      console.log(data)
       this.dialog = false;
-      console.log(this.message)
     }
   }
 });
