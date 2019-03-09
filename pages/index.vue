@@ -1,7 +1,5 @@
 <template>
   <section class="bottom">
-
-      <!-- ボタン表示 -->
       <v-layout row>
         <v-flex xs12>
           <v-form>
@@ -11,7 +9,6 @@
           </v-form>
         </v-flex>
       </v-layout>
-
   </section>
 </template>
 
