@@ -20,10 +20,26 @@
       </v-layout>
     </v-card>
 
-    <v-form>
-      <v-textarea name="message" label="メッセージ" height="300"></v-textarea>
-      <v-btn flat @click="signin">ご提案！</v-btn>
-    </v-form>
+
+
+    <v-dialog v-model="dialog" width="500">
+      <template v-slot:activator="{ on }">
+        <v-form>
+          <v-textarea v-model="message" label="メッセージ"></v-textarea>
+          <v-btn color="red lighten-2" dark v-on="on">ご提案！</v-btn>
+        </v-form>
+      </template>
+
+      <v-card>
+        <v-card-title class="headline grey lighten-2" primary-title>提案を送信します。</v-card-title>
+        <v-card-text>{{ message }}</v-card-text>
+        <v-divider></v-divider>
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn color="primary" flat @click="propose()">ＯＫ</v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
 
   </section>
 </template>
@@ -34,6 +50,10 @@ import { NuxtContext } from 'nuxt';
 import Vue from 'vue';
 
 export default Vue.extend({
+  data: (): object => ({
+    message: '',
+    dialog: false
+  }),
   async asyncData({ query }: NuxtContext): Promise<object> {
     const orders = [
       {
@@ -71,6 +91,10 @@ export default Vue.extend({
     }
   },
   methods: {
+    propose() {
+      this.dialog = false;
+      console.log(this.message)
+    }
   }
 });
 </script>
