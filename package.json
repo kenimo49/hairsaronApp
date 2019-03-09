@@ -12,8 +12,9 @@
     "vue": "^2.5.17"
   },
   "devDependencies": {
-    "@nuxtjs/axios": "^5.3.1",
+    "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/pwa": "^2.6.0",
+    "@nuxtjs/vuetify": "^0.4.2",
     "cross-env": "^5.2.0",
     "gh-pages": "^2.0.1",
     "shx": "^0.3.2",
