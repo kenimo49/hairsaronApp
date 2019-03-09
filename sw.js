@@ -8,16 +8,16 @@ workbox.precaching.precacheAndRoute([
     "revision": "774694114d5524c9eab20dbc3541d1f6"
   },
   {
-    "url": "/hairsaronApp/static/layouts/default.f56638de6fbc4d54bbb1.js",
-    "revision": "561a6f9969529b418777e7d2a3642280"
+    "url": "/hairsaronApp/static/layouts/default.da1a41e8b59a01dde6c9.js",
+    "revision": "788fbf50f7d4e34fc9ef3593e0e0b023"
   },
   {
-    "url": "/hairsaronApp/static/manifest.18b33f0d0bd62084cd34.js",
-    "revision": "f2742f53a1ebb6a3f0dd28e5414662ea"
+    "url": "/hairsaronApp/static/manifest.a94b0a5db471ac8a542d.js",
+    "revision": "1a8ddba1504a3647f4a0796c05bab36f"
   },
   {
-    "url": "/hairsaronApp/static/pages/index.d1f8bfa71f4da2f38593.js",
-    "revision": "62e87a26910a39b5e3203a4807289810"
+    "url": "/hairsaronApp/static/pages/index.a22b8b408f510f4eb7bb.js",
+    "revision": "37e98bfd34b81fc28d494b89e42aff83"
   },
   {
     "url": "/hairsaronApp/static/pages/orders.5fa73a1fa25420f1247e.js",
