@@ -4,28 +4,32 @@ importScripts('/hairsaronApp/static/workbox.dev.4c4f5ca6.js')
 
 workbox.precaching.precacheAndRoute([
   {
-    "url": "/hairsaronApp/static/app.99079d39f9425dcf1811.js",
-    "revision": "11e94a2d231062d936dbe2f166722236"
+    "url": "/hairsaronApp/static/app.a1fd668b61e8ff4acbeb.js",
+    "revision": "774694114d5524c9eab20dbc3541d1f6"
   },
   {
-    "url": "/hairsaronApp/static/layouts/default.0960294a37d459a4a739.js",
-    "revision": "137da4bc5f0180e3aac1c2aea75d1095"
+    "url": "/hairsaronApp/static/layouts/default.f56638de6fbc4d54bbb1.js",
+    "revision": "561a6f9969529b418777e7d2a3642280"
   },
   {
-    "url": "/hairsaronApp/static/manifest.42c21cf8d077e4efd2a3.js",
-    "revision": "8976576b958ec0a81f7f4bcdc03c68af"
+    "url": "/hairsaronApp/static/manifest.ad9bcad4f451d96d0adc.js",
+    "revision": "5c73733298577e3fdf795030c8ae9775"
   },
   {
-    "url": "/hairsaronApp/static/pages/index.aeb983834ce664760943.js",
-    "revision": "8ea2130ca7806a8b012bbf53c30bf03b"
+    "url": "/hairsaronApp/static/pages/index.d1f8bfa71f4da2f38593.js",
+    "revision": "62e87a26910a39b5e3203a4807289810"
   },
   {
-    "url": "/hairsaronApp/static/pages/orders.a4caa90c254c6f6322f8.js",
-    "revision": "74ea879c9cd4852fd44ad6e3614d0954"
+    "url": "/hairsaronApp/static/pages/orders.5fa73a1fa25420f1247e.js",
+    "revision": "65754f2398318008e1714e50e4daab37"
   },
   {
-    "url": "/hairsaronApp/static/vendor.c4c5d82f366ef3160d2f.js",
-    "revision": "be29f785b221051f753fa3a3bedbb0f4"
+    "url": "/hairsaronApp/static/pages/propose.e3690f21d3285fa33004.js",
+    "revision": "c56307c933f0f3cdb667e35405c89782"
+  },
+  {
+    "url": "/hairsaronApp/static/vendor.c607eea93dc79377d17e.js",
+    "revision": "7ce56f1e52460d85006bac08b0ef602c"
   }
 ], {
   "cacheId": "hairsaronApp",
