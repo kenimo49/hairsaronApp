@@ -8,7 +8,7 @@ module.exports = {
   },
   build: {
     publicPath: '/static/',
-    vendor: [ 'axios' ]
+    vendor: [ 'axios', 'vuetify' ]
   },
   head: {
     titleTemplate: (titleChunk) => titleChunk ? `${titleChunk} | ${require('~/package.json').displayName}` : pkg.displayName
@@ -32,6 +32,7 @@ module.exports = {
   modules: [
     [ '@nuxtjs/axios' ],
     [ '@nuxtjs/pwa' ],
+    [ '@nuxtjs/vuetify' ],
     [ '~/modules/typescript.js' ]
   ],
   axios: {
