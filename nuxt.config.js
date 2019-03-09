@@ -31,7 +31,8 @@ module.exports = {
   },
   modules: [
     [ '@nuxtjs/axios' ],
-    [ '@nuxtjs/pwa' ]
+    [ '@nuxtjs/pwa' ],
+    [ '~/modules/typescript.js' ]
   ],
   axios: {
     retry: {
