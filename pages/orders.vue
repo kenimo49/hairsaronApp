@@ -26,10 +26,8 @@ import Vue from 'vue';
 
 export default Vue.extend({
   async asyncData({ app }: NuxtContext): Promise<object> {
-    const data = (await app.$axios.get('http://850b2c9b.ngrok.io/hairsaron/apiv1/orders?stylistId=1')).data.orders
-    data.concat()
-    console.log(data)
-
+    // const data = (await app.$axios.get('http://850b2c9b.ngrok.io/hairsaron/apiv1/orders?stylistId=1')).data.orders
+    console.log(app)
     return {
       orders: [
         {
@@ -74,7 +72,8 @@ export default Vue.extend({
             proporsalDateEnd: "2019/2/28"
             }
         }
-      ].concat(data)
+      ]
+      // ].concat(data)
     }
   },
   methods: {
