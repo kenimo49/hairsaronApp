@@ -1,10 +1,14 @@
 {
   "name": "hairsaronApp",
   "displayName": "ヘアスタイル提案",
+  "displayShortName": "ヘアスタイル提案",
+  "description": "スタイリストによる提案型ヘアスタイルサロン",
+  "applicationHost": "https://kenimo49.github.io",
   "version": "0.0.1",
   "private": true,
   "dependencies": {},
   "devDependencies": {
+    "@nuxtjs/axios": "^5.3.1",
     "@nuxtjs/pwa": "^2.6.0",
     "cross-env": "^5.2.0",
     "gh-pages": "^2.0.1",
@@ -12,7 +16,7 @@
     "shx": "^0.3.2"
   },
   "scripts": {
-    "clean": "shx rm -rf .nuxt dist",
+    "clean": "shx rm -rf .nuxt dist static/sw.js",
     "setup": "yarn install --ignore-optional",
     "upgrade": "yarn upgrade --latest",
     "dev": "nuxt",
