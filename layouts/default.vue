@@ -32,7 +32,10 @@ import Vue from 'vue';
 export default Vue.extend({
   methods: {
     wallpaper(): object {
-      return { background: `url("${require(`~/assets/image/wallpaper-top.jpg`)}") center bottom / cover no-repeat fixed !important` };
+      const path = this.$route.path;
+      const type = path === '/' ? 'top' : 'page';
+      const pos = type === 'top' ? 'bottom' : 'top';
+      return { background: `url("${require(`~/assets/image/wallpaper-top.jpg`)}") center ${pos} / cover no-repeat fixed !important` };
     }
   }
 });
