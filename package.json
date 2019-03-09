@@ -1,0 +1,23 @@
+{
+  "name": "hairtharonApp",
+  "displayName": "ヘアスタイル提案",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "gh-pages": "^2.0.1",
+    "nuxt": "^1.4.5",
+    "shx": "^0.3.2"
+  },
+  "scripts": {
+    "clean": "shx rm -rf .nuxt dist",
+    "setup": "yarn install --ignore-optional",
+    "upgrade": "yarn upgrade --latest",
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "analyze": "nuxt build --analyze",
+    "generate": "cross-env DEPLOY_ENV=GH_PAGES nuxt build",
+    "deploy": "gh-pages -d dist -b master -m 'Update Site [ci skip]'"
+  }
+}
