@@ -12,20 +12,20 @@ workbox.precaching.precacheAndRoute([
     "revision": "788fbf50f7d4e34fc9ef3593e0e0b023"
   },
   {
-    "url": "/hairsaronApp/static/manifest.a94b0a5db471ac8a542d.js",
-    "revision": "1a8ddba1504a3647f4a0796c05bab36f"
+    "url": "/hairsaronApp/static/manifest.7bbd395d1660a330f6a8.js",
+    "revision": "a81c4e630bb67db4b45cdeb86868a560"
   },
   {
-    "url": "/hairsaronApp/static/pages/index.a22b8b408f510f4eb7bb.js",
-    "revision": "37e98bfd34b81fc28d494b89e42aff83"
+    "url": "/hairsaronApp/static/pages/index.edd407671a8b2a61e78d.js",
+    "revision": "42f130cbe6515cdc38b3dce5c84a389c"
   },
   {
-    "url": "/hairsaronApp/static/pages/orders.5fa73a1fa25420f1247e.js",
-    "revision": "65754f2398318008e1714e50e4daab37"
+    "url": "/hairsaronApp/static/pages/orders.7f0f65479d34e627d865.js",
+    "revision": "0113c767223d4a4c76992fdc6cd13807"
   },
   {
-    "url": "/hairsaronApp/static/pages/propose.5748ca92c12e33fd4140.js",
-    "revision": "ecd0514b39f5693a81ca82a15e0af2e0"
+    "url": "/hairsaronApp/static/pages/propose.981f7cc7ec5d1d98f743.js",
+    "revision": "fcc498fa916db6b952bf50f8894f28b3"
   },
   {
     "url": "/hairsaronApp/static/vendor.c607eea93dc79377d17e.js",
