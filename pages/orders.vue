@@ -62,7 +62,7 @@ export default Vue.extend({
   },
   methods: {
     propose(userName: string) {
-      this.$router.push({ path: `/propose?${userName}` });
+      this.$router.push({ path: `/propose?target=${userName}` });
     }
   }
 });
