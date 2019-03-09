@@ -1,0 +1,16 @@
+html, body {
+  font-feature-settings : "palt";
+}
+
+a {
+  text-decoration: none;
+}
+
+.bottom {
+  overflow: hidden;
+  position: fixed;
+
+  bottom: 32px;
+  left: 20px;
+  right: 20px;
+}
